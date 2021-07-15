@@ -3,6 +3,10 @@ import '../../App.css'
 
 export default function Contact(){
     return (
-        <h1 className='contact'>Contact</h1>
+        <>
+        <div className=".page__container" id="contact">
+        <h2 className='contact'>Contacto</h2>
+        </div>
+        </>
     )
 }

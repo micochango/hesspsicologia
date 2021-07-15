@@ -1,10 +1,14 @@
 import React from 'react'
 import '../../App.css'
+import AboutCard from '../AboutCard'
+
 
 export default function About(){
     return (
         <>
-        <h1>Acerca de mí</h1>
+        <div className='page__container about' id="about">
+            <AboutCard title="Acerca de mí"/>
+        </div>
         </>
     )
 }

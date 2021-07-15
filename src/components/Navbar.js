@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import './Navbar.css';
 import { Button } from './Button';
 
@@ -30,7 +31,7 @@ function Navbar(){
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link 
-                    to="/" 
+                    smooth to="#home" 
                     className="navbar-logo"
                     onClick={closeMobileMenu}
                     >
@@ -42,7 +43,7 @@ function Navbar(){
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link 
-                            to='/' 
+                            smooth to='#home' 
                             className='nav-links' 
                             onClick={closeMobileMenu}>
                                 Inicio
@@ -50,7 +51,7 @@ function Navbar(){
                         </li>
                         <li className='nav-item'>
                             <Link 
-                            to='/services' 
+                            smooth to='#services' 
                             className='nav-links' 
                             onClick={closeMobileMenu}>
                                 Servicios
@@ -58,7 +59,7 @@ function Navbar(){
                         </li>
                         <li className='nav-item'>
                             <Link 
-                            to='/about' 
+                            smooth to='#about' 
                             className='nav-links' 
                             onClick={closeMobileMenu}>
                                 Acerca de mí
@@ -66,7 +67,7 @@ function Navbar(){
                         </li>
                         <li className='nav-item'>
                             <Link 
-                            to='/blog' 
+                            smooth to='#blog' 
                             className='nav-links' 
                             onClick={closeMobileMenu}>
                                 Blog

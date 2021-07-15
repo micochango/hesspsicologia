@@ -7,19 +7,22 @@ import Services from './components/pages/Services'
 import About from './components/pages/About'
 import Blog from './components/pages/Blog'
 import Contact from './components/pages/Contact'
+// import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' exact component={Home} ></Route>
-          <Route path='/services' exact component={Services} ></Route>
-          <Route path='/about' exact component={About} ></Route>
-          <Route patch='/blog' exact component={Blog} ></Route>
-          <Route patch='/contact' exact component={Contact} ></Route>
-        </Switch>
+        <Switch />
+          <Route patch='/' exact component={Home} />
+          <Route patch='/services' exact component={Services} />
+          <Route patch='/about' exact component={About} />
+          <Route patch='/blog' exact component={Blog} />
+          <Route patch='/contact' exact component={Contact} />
+          {/* <Hero /> */}
+          <Footer />
       </Router>
     </>
   );
