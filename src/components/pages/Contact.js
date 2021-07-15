@@ -1,11 +1,13 @@
 import React from 'react'
 import '../../App.css'
+import ContactForm from '../ContactForm'
+
 
 export default function Contact(){
     return (
         <>
-        <div className=".page__container" id="contact">
-        <h2 className='contact'>Contacto</h2>
+        <div className='page__container contact' id="contact">
+            <ContactForm />
         </div>
         </>
     )
