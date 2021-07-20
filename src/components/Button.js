@@ -2,7 +2,7 @@ import React from 'react'
 import './Button.css'
 import { HashLink as Link } from 'react-router-hash-link'
 
-const STYLES = ['btn--primary', 'btn-secondary', 'btn--outline']
+const STYLES = ['btn--outline']
 const SIZES = ['btn--medium', 'btn--large', 'btn--small']
 const COLOR = ['btn--white', 'btn--dark', 'btn--info', 'btn--warning', 'btn--error', 'btn--success']
 
