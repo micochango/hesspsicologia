@@ -7,7 +7,7 @@ function Home(){
     return(
         <>
             <div className=".page__container" id="home">
-            <HeroSection />
+                <HeroSection />
             </div>
         </>
     );

@@ -1,4 +1,13 @@
 
+  :root {
+    --primary: #ece8ed;
+    --dark: #363537;
+    --info: #75dbcd;
+    --warning: #ff9f1c;
+    --error: #ef2d56;
+    --success: #5bb18c;
+}
+  
   .container{
     max-width:1170px;
     margin-left:auto;
