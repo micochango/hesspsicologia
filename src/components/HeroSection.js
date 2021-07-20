@@ -14,8 +14,9 @@ function HeroSection() {
             <h1>Hess Psicología</h1>
                 <Button 
                 className='btns' 
-                buttonStyle='btn--primary' 
+                // buttonStyle='btn--primary' 
                 buttonSize='btn--large'
+                buttonColor='btn--white'
                 >Haz tu cita
                 </Button>
         </div>

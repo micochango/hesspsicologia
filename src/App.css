@@ -200,6 +200,7 @@ and (max-width : 480px) {
   .__item__info {
     padding: 20px 30px 30px;
     background-color: var(--primary);
+    min-height: 130px;
   }
   
   .__item__text {
