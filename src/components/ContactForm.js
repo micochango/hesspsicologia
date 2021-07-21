@@ -5,20 +5,25 @@ import '../App.css'
 export default function ContactForm() {
     return (
         <div className="container">
-            <h2 class="brand">Contacto</h2>
-            <div class="wrapper">
-                <div class="company-info">
+            <h2 className="brand">Contacto</h2>
+            <div className="wrapper">
+                <div className="company-info">
                 <i className="fab fa-typo3" /> <h3>Hess Psicología</h3>
                     <ul>
-                        <li className='inline'><i class="fa fa-phone"></i> 4444-4444</li>
-                        <li><i class="fa fa-envelope"></i> hessv@gmail.com</li>
+                        <li><i className="fa fa-phone"></i> 4444-4444</li>
+                        <li><i className="fa fa-envelope"></i> hessv@gmail.com</li>
                     </ul>
                 </div>
-                <div class="contact">
-                    <div class="alert">Tu mensaje ha sido enviado.</div>
-                    <form id="contactForm">
+                <div className="contact">
+                    
+                    <form
+                    name="contact" 
+                    id="contactForm"
+                    method="POST"
+                    >
+                        <input type="hidden" name="form-name" value="contact" />
                         <p>
-                            <label>Nombre</label>
+                            <label htmlFor="name">Nombre</label>
                             <input 
                             type="text" 
                             name="name" 
@@ -26,10 +31,10 @@ export default function ContactForm() {
                             required/>
                         </p>
                         <p>
-                            <label>Correo electrónico</label>
+                            <label htmlFor="email">Correo electrónico</label>
                             <input 
                             type="email" 
-                            name="email"    
+                            name="_replyto"   
                             id="email" 
                             required/>
                         </p>
@@ -40,16 +45,17 @@ export default function ContactForm() {
                         name="phone" 
                         id="phone"/>
                     </p>
-                    <p class="full">
+                    <p className="full">
                         <label>Mensaje</label>
                         <textarea 
                         name="message" 
                         rows="5" 
-                        id="message">
-                        </textarea>
+                        id="message"/>
                     </p>
-                    <p class="full">
-                    <button type="submit">Enviar</button>
+                    <p className="full">
+                    <button 
+                    type="submit"
+                    >Enviar</button>
                     </p>
                     </form>
                 </div>
