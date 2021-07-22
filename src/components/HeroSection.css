@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 768px) {
     .hero-container > h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .btn-mobile {
         display: block;

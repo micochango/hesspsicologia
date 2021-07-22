@@ -8,7 +8,7 @@ export default function ContactForm() {
             <h2 className="brand">Contacto</h2>
             <div className="wrapper">
                 <div className="company-info">
-                <i className="fab fa-typo3" /> <h3>Hess Psicología</h3>
+                <i className="fab fa-typo3" /> <h3 className="contact-title">Hess Psicología</h3>
                     <ul>
                         <li><i className="fa fa-phone"></i> 4444-4444</li>
                         <li><i className="fa fa-envelope"></i> hessv@gmail.com</li>
